@@ -130,7 +130,7 @@ This might be the first time you’re seeing this window, so let’s break it do
   WISTIA EXAMPLE. REPLACE 11dit621rx with the id
 -->
 <div class="wistia_embed wistia_async_jgwe4s75fw wistia_embed_initialized" id="wistia-jgwe4s75fw"
-  style="width: 100%; height: 50%;">
+  style="width: 100%; height: 90%;">
   <div id="wistia_chrome_23" class="w-chrome notranslate" tabindex="-1">
     <div id="wistia_grid_57_wrapper" style="display: block; width: 630px; height: 354.375px;">
       <div id="wistia_grid_57_above" style="height: 0px; font-size: 0px; line-height: 0px;"> </div>
@@ -449,7 +449,7 @@ Assuming `Documents` is a directory located within the working directory of the 
 ---
 
 <div class="wistia_embed wistia_async_sjnhxrdelv wistia_embed_initialized" id="wistia-sjnhxrdelv"
-  style="width: 100%; height: 50%;">
+  style="width: 100%; height: 90%;">
   <div id="wistia_chrome_23" class="w-chrome notranslate" tabindex="-1">
     <div id="wistia_grid_57_wrapper" style="display: block; width: 630px; height: 354.375px;">
       <div id="wistia_grid_57_above" style="height: 0px; font-size: 0px; line-height: 0px;"> </div>
