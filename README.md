@@ -103,7 +103,7 @@ By default, our terminal starts in what is referred to as the **home** directory
 
 Mac users:
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/tech/accessing-and-navigating-the-cli/terminal-example%20%281%29.png)
+![link text](./assets/mac-zsh-terminal.png)
 
 Windows users:
 
