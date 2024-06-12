@@ -5,7 +5,7 @@
 <span id=time-estimate class="color-grey-500">30 mins</span>
 
 <p id="lesson-description">
-  In this lesson you'll learn blah blah blah
+  In this lesson you'll learn how to use the CLI (Command Line Interface) to read, create, and remove files and directories on your computer.
 </p>
 
 <h5 id="topics-header" class="color-grey-500">Topics</h5>
@@ -33,7 +33,7 @@ Basic CLI Commands
 <ul>
   <li>Explain the command line and why developers use it. </li>
   <li>Navigate through your computer’s files structure via the CLI.</li>
-  <li>Objective 3</li>
+  <li>Create and remove files and directories via the CLI.</li>
 </ul>
 
 ---
