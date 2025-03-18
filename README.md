@@ -278,11 +278,12 @@ You can think of it as asking the computer, **"Where am I right now?"**
 When you open the terminal, you are placed in a certain directory on your computer.  
 The `pwd` command tells you exactly where that location is in your file system.
 
+**💻 In your terminal, type: `pwd`**
+**Then press `Enter`**
+
 If you were using a graphical interface, like **Finder** on a Mac or **File Explorer** on Windows, you would see the folder you are in.
 
 In the terminal, you cannot see files and folders by default — you need to use specific commands to ask for that information. (We will learn that next!)
-
-Here is what the `pwd` command looks like in action:
 
 <img src="./assets/pwd-home.png" alt="PWD Command" style="width:800px;"/>
 
@@ -290,12 +291,15 @@ Here is what the `pwd` command looks like in action:
 
 <h1 class="slide-header">The <code>ls</code> Command: Listing Files and Folders</h1>
 
-To see which files and folders are in your current directory, type the command **`ls`**.  
+To see which files and folders are in your current directory, use the command **`ls`**.  
 `ls` stands for **list**, and it tells the terminal to show everything in your current location.
 
-When you run `ls`, you might see something like this:
+**💻 In your terminal, type: `ls`**
+**Then press `Enter`**
 
-`Desktop` `Downloads` `Movies` `Pictures` `Documents` `Library` `Music` `Public`
+You might see something like this:
+
+**`Desktop` `Downloads` `Movies` `Pictures` `Documents` `Library` `Music` `Public`**
 
 If you are using Windows with Git Bash, the results may look slightly different, but you will still see familiar folders like `Desktop`, `Documents`, and `Downloads`.
 
@@ -308,17 +312,19 @@ If you are using Windows with Git Bash, the results may look slightly different,
 To move into a different directory, use the `cd` command.  
 `cd` stands for **change directory**, followed by the name of the folder you want to go into.
 
-For example: **`cd Documents`**
+**💻 In your terminal, type: `cd Documents`**
+**Then press `Enter`**
 
 Now, you are inside the `Documents` directory!
 
-To see what is inside this directory, use the **`ls`** command again:
+**💻 In your terminal, type: `ls`**
+**Then press `Enter`**
 
-`My Images` `My Work` `to-do-list.txt`
+This will give the contents of the `Documents` directory:
 
-**Note:** You will likely see different files and folders on your own computer.
+**`My Images` `My Work` `to-do-list.txt`**
 
-In this example, the `Documents` folder contains:
+In this example, the `Documents` directory contains:
 
 - A folder called **My Images**
 - A folder called **My Work**
@@ -328,7 +334,7 @@ This is just an example — your folders and files will reflect what you have on
 
 <img src="./assets/cd-documents-ls.png" alt="CD into Documents and LS" style="width:800px;"/>
 
-We can check the GUI and confirm this is the same:
+You can also check this in your computer’s GUI to confirm that it matches what you see in the terminal:
 
 <img src="./assets/finder-documents.png" alt="Gui of Documents Folder" style="width:800px;"/>
 
@@ -345,9 +351,10 @@ A flag is an extra option you add to a command to change how it behaves.
 
 Flags always start with a `-` (dash).
 
-For example, type: **`ls -a`**
+**💻 In your terminal, type: `ls -a`**
+**Then press `Enter`**
 
-This tells the terminal: **"List all files, including hidden ones."**  
+This tells the terminal: _"List all files, including hidden ones."_  
 Hidden files usually begin with a `.` (period).
 
 When you run `ls -a`, your output may look something like this:
@@ -360,11 +367,13 @@ When you run `ls -a`, your output may look something like this:
 
 If you want to leave the `Documents` folder and go back to the directory above it (the **parent directory**), use this command:
 
-**`cd ..`**
+**💻 In your terminal, type: `cd ..`**
+**Then press `Enter`**
 
 The two dots (`..`) tell the terminal to move **up one level** in the file structure.
 
-You can check where you are by typing: **`pwd`**
+**💻 In your terminal, type: `pwd`**
+**Then press `Enter`**
 
 You should now be back in your home directory, which might look like `/Users/yourname` on a Mac or `C:\Users\yourname` on Windows (if using Git Bash).
 
@@ -398,7 +407,8 @@ How would you find out in which directory your terminal is actively located?
 To create a new folder (which we call a **directory**), use the `mkdir` command.  
 For example, to create a folder called `myfolder`, type:
 
-**`mkdir myfolder`**
+**💻 In your terminal, type: `mkdir myfolder`**
+**Then press `Enter`**
 
 Now, if you type **`ls`** to list the contents of your current directory, you should see something like this:
 
@@ -414,7 +424,8 @@ Notice that `myfolder` has been added to the list.
 
 First, let’s move into the `myfolder` directory that we just created.
 
-Type: **`cd myfolder`**
+**💻 In your terminal, type: `cd myfolder`**
+**Then press `Enter`**
 
 Now we’re inside that folder.
 
@@ -422,9 +433,10 @@ Let’s create some new files. For example, if we want to start building a simpl
 
 We do this using the `touch` command. The `touch` command creates new, empty files.
 
-You can even create multiple files at once by listing them with spaces. For example:
+You can even create multiple files at once by listing them with spaces.
 
-**`touch index.html style.css`**
+**💻 In your terminal, type: `touch index.html style.css`**
+**Then press `Enter`**
 
 This will create two new files: `index.html` and `style.css`.
 
@@ -563,11 +575,15 @@ Now that we’ve created some files, let’s learn how to remove one.
 
 To delete a file, use the `rm` command, followed by the name of the file. For example:
 
-**`rm style.css`**
+**💻 In your terminal, type: `rm style.css`**
+**Then press `Enter`**
 
 ⚠️ **Important:** Be very careful when using `rm`. Deleting a file with `rm` is permanent — it does not go to the trash or recycle bin, and you cannot undo it.
 
-After deleting the file, you can type **`ls`** to check the contents of the folder.
+After deleting the file, you verify by checking the contents of the folder.
+
+**💻 In your terminal, type: `ls`**
+**Then press `Enter`**
 
 You should now only see `index.html` remaining.
 
