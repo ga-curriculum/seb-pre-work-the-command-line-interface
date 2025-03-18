@@ -152,7 +152,7 @@ The terminal window is where you will type commands, and where the computer will
 
 If this is your first time seeing this window, let’s look at what each part means:
 
-- The **prompt** is the symbol (often a `$`) that appears at the beginning of a line. It shows that the terminal is ready for your next command.
+- The **prompt** is the symbol (often a **`$`**) that appears at the beginning of a line. It shows that the terminal is ready for your next command.
 - The **cursor** appears after the prompt. This is where the text you type will show up, just like a blinking cursor in other programs.
 - The **username** (your computer username) often appears before the prompt, showing who is logged in.
 
@@ -290,7 +290,7 @@ Here is what the `pwd` command looks like in action:
 
 <h1 class="slide-header">The <code>ls</code> Command: Listing Files and Folders</h1>
 
-To see which files and folders are in your current directory, type the command `ls`.  
+To see which files and folders are in your current directory, type the command **`ls`**.  
 `ls` stands for **list**, and it tells the terminal to show everything in your current location.
 
 When you run `ls`, you might see something like this:
@@ -330,7 +330,9 @@ This is just an example — your folders and files will reflect what you have on
 
 We can check the GUI and confirm this is the same:
 
-## <img src="./assets/finder-documents.png" alt="Gui of Documents Folder" style="width:800px;"/>
+<img src="./assets/finder-documents.png" alt="Gui of Documents Folder" style="width:800px;"/>
+
+---
 
 <h1 class="slide-header">Hidden Files and Flags</h1>
 
