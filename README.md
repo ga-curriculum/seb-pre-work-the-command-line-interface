@@ -365,7 +365,7 @@ When you run `ls -a`, your output may look something like this:
 
 <h1 class="slide-header">Moving Up to the Parent Directory</h1>
 
-If you want to leave the `Documents` folder and go back to the directory above it (the **parent directory**), use this command:
+If you want to leave the `Documents` folder and go back to the directory above it (the **parent directory**), use the command `cd ..`.
 
 **💻 In your terminal, type: `cd ..`**
 **Then press `Enter`**
@@ -405,14 +405,14 @@ How would you find out in which directory your terminal is actively located?
 <h1 class="slide-header">Creating a New Directory</h1>
 
 To create a new folder (which we call a **directory**), use the `mkdir` command.  
-For example, to create a folder called `myfolder`, type:
+For example, let's say we want to create a folder called `myfolder`.
 
 **💻 In your terminal, type: `mkdir myfolder`**
 **Then press `Enter`**
 
 Now, if you type **`ls`** to list the contents of your current directory, you should see something like this:
 
-`Desktop` `Downloads` `Movies` `Pictures` `Documents` `Library` `Music` `Public` `myfolder`
+**`Desktop` `Downloads` `Movies` `Pictures` `Documents` `Library` `Music` `Public` `myfolder`**
 
 Notice that `myfolder` has been added to the list.
 
@@ -431,9 +431,7 @@ Now we’re inside that folder.
 
 Let’s create some new files. For example, if we want to start building a simple website, we can create an HTML file and a CSS file.
 
-We do this using the `touch` command. The `touch` command creates new, empty files.
-
-You can even create multiple files at once by listing them with spaces.
+We do this using the `touch` command. The `touch` command creates new, empty files. You can even create multiple files at once by listing them with spaces.
 
 **💻 In your terminal, type: `touch index.html style.css`**
 **Then press `Enter`**
@@ -573,7 +571,7 @@ Terminal tells us where we are by returning “macBook-Pro-(8): documents EmilyL
 
 Now that we’ve created some files, let’s learn how to remove one.
 
-To delete a file, use the `rm` command, followed by the name of the file. For example:
+To delete a file, we use the `rm` command, followed by the name of the file.
 
 **💻 In your terminal, type: `rm style.css`**
 **Then press `Enter`**
