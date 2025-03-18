@@ -1,11 +1,11 @@
-<textarea id="source">
+<!-- <textarea id="source"> -->
 
 <h1 class="slide-header">The Command Line Interface</h1>
 
 <span id=time-estimate class="color-grey-500">30 mins</span>
 
 <p id="lesson-description">
-  In this lesson you'll learn how to use the CLI (Command Line Interface) to read, create, and remove files and directories on your computer.
+In this lesson you'll learn how to use the CLI (Command Line Interface) to read, create, and remove files and directories on your computer.
 </p>
 
 <h5 id="topics-header" class="color-grey-500">Topics</h5>
@@ -44,7 +44,8 @@ When most computer users want to find files on their computers, they use a graph
 
 When developers navigate their computers, they tend to use the command line interface — commonly referred to as the “command line,” or “CLI.” 
 
-![](https://ga-instruction.s3.amazonaws.com/assets/tech/accessing-and-navigating-the-cli/mac-and-pc-gui.png)
+
+<img src="./assets/mac-and-pc-gui.png" alt="Mac and Windows Gui" style="width:800px;"/>
 
 ---
 
@@ -52,7 +53,8 @@ When developers navigate their computers, they tend to use the command line inte
 
 The command line interacts with computers more directly by using text instead of graphics to represent file folders and file types. In essence, the command line is more efficient for developers because it allows them to talk more directly to the computer. 
 
-![](https://ga-instruction.s3.amazonaws.com/json/WDI-Fundamentals/assets/unit-2/GUI-vs-CLI.png)
+
+<img src="./assets/GUI-vs-CLI.png" alt="Gui vs CLI graphic" style="width:500px;"/>
 
 ---
 
@@ -65,6 +67,8 @@ We can perform actions using the command line by **entering commands**.
 There’s a command to perform virtually any task on your computer. 
 
 No, there isn’t a `self destruct` command. No, there isn’t an `eject seat` command. And no, there isn’t a `time travel` command. However, there _are_ commands for opening applications, creating new files, and copying files from one place to another — you know, real-life practical stuff.
+
+<img src="./assets/hello-cmd-not-found.png" alt="Hello Command not found" style="width:800px;"/>
 
 ---
 
@@ -103,11 +107,11 @@ By default, our terminal starts in what is referred to as the **home** directory
 
 Mac users:
 
-![link text](./assets/mac-zsh-terminal.png)
+<img src="./assets/blank-terminal.png" alt="Mac Terminal Home" style="width:400px;"/>
 
 Windows users:
 
-![link text](https://ga-instruction.s3.amazonaws.com/json/WDI-Fundamentals/assets/unit-2/git-bash.gif)
+<img src="./assets/git-bash.png" alt="Git Bash terminal" style="width:400px;"/>
 
 ---
 
@@ -121,7 +125,8 @@ This might be the first time you’re seeing this window, so let’s break it do
 * The **cursor** follows the prompt. This is where the text you type will appear, just like in any other setting in which you’ve seen a cursor.
 * The **username** of the person logged in precedes the prompt.
 
-![link text](https://ga-instruction.s3.amazonaws.com/json/WDI-Fundamentals/assets/unit-2/terminal-blank.gif)
+
+<img src="./assets/blank-terminal.png" alt="Mac Terminal Home" style="width:800px;"/>
 
 ---
 
@@ -241,6 +246,8 @@ If we were using Finder in the GUI, we’d be able to see the _files_ and _direc
 
 In a CLI, however, if we want to see the files and directory in our current location, we need to ask for that using another command.
 
+<img src="./assets/pwd-home.png" alt="PWD Command" style="width:800px;"/>
+
 ---
 
 <h1 class="slide-header">The List Command</h1>
@@ -250,24 +257,18 @@ To find out which files are in our current directory, type `ls`, short for “li
 Ta-da! We’re speaking in a language our computer understands. This command lists the directory’s contents, something similar to:
 
 `Applications`
-
 `Desktop`
-
 `Documents`
-
 `Downloads`
-
 `Library`
-
 `Movies`
-
 `Music`
-
 `Pictures`
-
 `Public`
 
 If you're using Windows, you may see something slightly different but will likely still have directories like `Desktop`, `Documents`, and `Downloads`.
+
+<img src="./assets/ls-home.png" alt="LS Home Dir" style="width:800px;"/>
 
 ---
 
@@ -279,17 +280,15 @@ To change directories, we’ll use `cd` — “change directory” — plus the 
 
 Excellent, we’re in the `Documents` directory! Now, let’s find out what’s in the folder using `ls`: 
 
-`$ ls`
-
- `funny_cat_picture.jpg`
-
-`office_stuff`
-
-`world_domination_checklist.txt`
+`My Images`
+`My Work`
+`to-do-list.txt`
 
 **Note**: Again, you’ll probably see different files and directories on your own machine!
 
 In our example, it looks like the `Documents` directory contains a JPG file of a funny cat picture, a folder full of “office stuff,” and a text file containing a checklist for world domination. Your `Documents` directory’s contents are probably different.
+
+<img src="./assets/cd-documents-ls.png" alt="CD into Documents and LS" style="width:800px;"/>
 
 ---
 
@@ -309,17 +308,17 @@ This means, “Show me all of the files in my working directory and do not ignor
 
 Your output may look different but should show previously hidden files, like so: 
 
-`$ ls -a`
+`My Images`
+`My Work`
+`to-do-list.txt`
+`.localized`
+`.`
+`..`
+`.%cb_defense`
+`.DS_Store`
 
-` funny_cat_picture.jpg`
 
-`office_stuff`
-
-`world_domination_checklist.txt`
-
-`.bash_profile`
-
-`.bash_history`
+<img src="./assets/ls-a-documents.png" alt="LS -A in Documents" style="width:800px;"/>
 
 ---
 
@@ -336,6 +335,8 @@ Now, if we type `pwd`, we’ll see that we’re in our home directory, which may
 If we were deeper in our file structure, we could use the `cd ~` command.
 
 The tilde (`~`) is a shortcut for the home directory of the terminal’s current user.
+
+<img src="./assets/cd-back-to-home.png" alt="CD Back to Home" style="width:800px;"/>
 
 ---
 
@@ -359,26 +360,19 @@ How would you find out in which directory your terminal is actively located?
 To create a folder called `myfolder`, type `mkdir myfolder`. Now, if we inspect the contents of our home folder using `ls`, we should see something similar to the following:
 
 `Applications`
-
 `Desktop`
-
 `Documents`
-
 `Downloads`
-
 `Library`
-
 `Movies`
-
 `Music`
-
 `myfolder`
-
 `Pictures`
-
 `Public`
 
 Note the addition of the `myfolder` directory.
+
+<img src="./assets/mkdir-myfolder.png" alt="mkdir myfolder" style="width:800px;"/>
 
 ---
 
@@ -392,6 +386,8 @@ To accomplish this, we’ll use the `touch` command. We can even make multiple f
 
 `touch` `index.html` `style.css`
 
+<img src="./assets/touch-files.png" alt="Touch Files" style="width:800px;"/>
+
 ---
 
 <h1 class="slide-header">Removing Files</h1>
@@ -403,6 +399,8 @@ Now that we’ve created a few files, let’s remove one using the `rm` command:
 `rm style.css`
 
 We can verify its removal by typing `ls`, which should only return `index.html`.
+
+<img src="./assets/rm-style-file.png" alt="REmove Style File" style="width:800px;"/>
 
 ---
 
