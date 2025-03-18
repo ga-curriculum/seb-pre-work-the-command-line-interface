@@ -432,78 +432,6 @@ This will create two new files: `index.html` and `style.css`.
 
 ---
 
-<h1 class="slide-header">Removing Files</h1>
-
-Now that we’ve created some files, let’s learn how to remove one.
-
-To delete a file, use the `rm` command, followed by the name of the file. For example:
-
-**`rm style.css`**
-
-⚠️ **Important:** Be very careful when using `rm`. Deleting a file with `rm` is permanent — it does not go to the trash or recycle bin, and you cannot undo it.
-
-After deleting the file, you can type **`ls`** to check the contents of the folder.
-
-You should now only see `index.html` remaining.
-
-<img src="./assets/rm-style-file.png" alt="Remove Style File" style="width:800px;"/>
-
----
-
-<h1 class="slide-header">Removing Directories</h1>
-
-Just like we removed a file, we can also remove a directory (a folder) using the `rm` command.
-
-First, let’s move back to the parent directory by typing: **`cd ..`**
-
-Now you should be back in your home directory.
-
-To remove the `myfolder` directory, type:
-
-**`rm -r myfolder`**
-
-**What does the `-r` flag mean?**
-
-The `-r` flag stands for **recursive**. This means that the terminal will remove the directory and everything inside it, including any subdirectories or files.
-
-You must always use the `-r` flag when deleting a directory, because directories can contain other items, and this flag tells the terminal to remove them all.
-
-⚠️ **Be extremely careful when using `rm -r`.**  
-This command will permanently delete directories and all their contents. There is no undo. Always double-check the directory name before pressing Enter.
-
-<img src="./assets/rm-myfolder.png" alt="Remove myfolder" style="width:800px;"/>
-
----
-
-<h1 class="slide-header">Knowledge Check</h1>
-
-Which of the following is the most comprehensive way of removing a directory named `sales` from your home directory?
-
-<fieldset>
-    <legend>Please select one of the following</legend>
-<input type='radio' name='answers' id='answer3' value='answer3' /><label for='answer3'>delete sales</label><br />
-<input type='radio' name='answers' id='answer1' value='answer1' correct='true'/><label for='answer1'>rm -r sales</label><br />
-<input type='radio' name='answers' id='answer4' value='answer4' /><label for='answer4'>rm -r Parent Directory</label><br />
-</fieldset>
-<button class='ant-btn ant-btn-primary multiple-choice-radio-submit'>Submit Answer</button>
-
----
-
-<h1 class="slide-header">Knowledge Check</h1>
-
-Assuming `Documents` is a directory located within the working directory of the terminal, what does the command `ls -a Documents` do?
-
-<fieldset>
-    <legend>Please select one of the following</legend>
-<input type='radio' name='answers' id='answer2' value='answer2' /><label for='answer2'>Changes into the Documents directory and lists all contents</label><br />
-<input type='radio' name='answers' id='answer3' value='answer3' /><label for='answer3'>Remains in the current directory and lists all contents of the Documents directory</label><br />
-<input type='radio' name='answers' id='answer4' value='answer4' correct="true"/><label for='answer4'>Remains in the current directory and lists only the non-hidden contents of the Documents directory</label><br />
-<input type='radio' name='answers' id='answer5' value='answer5' /><label for='answer5'>Changes into the Documents directory and lists its non-hidden contents</label><br />
-</fieldset>
-<button class='ant-btn ant-btn-primary multiple-choice-radio-submit'>Submit Answer</button>
-
----
-
 <div class="wistia_embed wistia_async_sjnhxrdelv wistia_embed_initialized" id="wistia-sjnhxrdelv"
   style="width: 100%; height: 90%;">
   <div id="wistia_chrome_23" class="w-chrome notranslate" tabindex="-1">
@@ -626,6 +554,39 @@ Terminal tells us where we are by returning “macBook-Pro-(8): documents EmilyL
 
   </p>
 </details>
+
+---
+
+<h1 class="slide-header">Removing Files</h1>
+
+Now that we’ve created some files, let’s learn how to remove one.
+
+To delete a file, use the `rm` command, followed by the name of the file. For example:
+
+**`rm style.css`**
+
+⚠️ **Important:** Be very careful when using `rm`. Deleting a file with `rm` is permanent — it does not go to the trash or recycle bin, and you cannot undo it.
+
+After deleting the file, you can type **`ls`** to check the contents of the folder.
+
+You should now only see `index.html` remaining.
+
+<img src="./assets/rm-style-file.png" alt="Remove Style File" style="width:800px;"/>
+
+---
+
+<h1 class="slide-header">Knowledge Check</h1>
+
+Assuming `Documents` is a directory located within the working directory of the terminal, what does the command `ls -a Documents` do?
+
+<fieldset>
+    <legend>Please select one of the following</legend>
+<input type='radio' name='answers' id='answer2' value='answer2' /><label for='answer2'>Changes into the Documents directory and lists all contents</label><br />
+<input type='radio' name='answers' id='answer3' value='answer3' /><label for='answer3'>Remains in the current directory and lists all contents of the Documents directory</label><br />
+<input type='radio' name='answers' id='answer4' value='answer4' correct="true"/><label for='answer4'>Remains in the current directory and lists only the non-hidden contents of the Documents directory</label><br />
+<input type='radio' name='answers' id='answer5' value='answer5' /><label for='answer5'>Changes into the Documents directory and lists its non-hidden contents</label><br />
+</fieldset>
+<button class='ant-btn ant-btn-primary multiple-choice-radio-submit'>Submit Answer</button>
 
 ---
 
