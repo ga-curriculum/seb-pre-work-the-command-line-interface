@@ -608,7 +608,7 @@ Assuming `Documents` is a directory located within the working directory of the 
 
 Now it’s your turn to practice using the command line!
 
-We’ve created a directory for you called `world`. You can download it <a href="./assets/world.zip" download>here</a>.
+We’ve created a directory for you called `world`. You can download it <a href="./assets/World.zip" download>here</a>.
 
 After you download and double-click the zip file, it will create a folder called `world` in your `Downloads` directory.
 
